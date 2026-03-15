@@ -11,10 +11,11 @@ export default defineConfig({
     port: 8080,
   },
   output: {
-    distPath: {
-      root: "dist-demo",
-    },
+  distPath: {
+    root: "dist-demo",
   },
+  assetPrefix: "/jsonjoy-builder/",
+},
   source: {
     entry: {
       index: "./demo/main.tsx",
