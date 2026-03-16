@@ -10,6 +10,7 @@ import type { JSONSchema, NewField } from "../../types/jsonSchema.ts";
 import { asObjectSchema, isBooleanSchema } from "../../types/jsonSchema.ts";
 import AddFieldButton from "./AddFieldButton.tsx";
 import SchemaFieldList from "./SchemaFieldList.tsx";
+import UnionSchemaEditor from "./UnionSchemaEditor";
 
 /** @public */
 export interface SchemaVisualEditorProps {
