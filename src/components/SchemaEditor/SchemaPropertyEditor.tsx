@@ -223,19 +223,25 @@ export const SchemaPropertyEditor: React.FC<SchemaPropertyEditorProps> = ({
         )}
       </div>
 
-      {/* Type-specific editor */}
       {expanded && (
-        <div className="pt-1 pb-2 px-2 sm:px-3 animate-in">
-          {readOnly && tempDesc && <p className="pb-2">{tempDesc}</p>}
-          <TypeEditor
-            schema={schema}
-            readOnly={readOnly}
-            validationNode={validationNode}
-            onChange={handleSchemaUpdate}
-            depth={depth + 1}
-          />
-        </div>
-      )}
+  <div className="pt-1 pb-2 px-2 sm:px-3 animate-in">
+    {readOnly && tempDesc && <p className="pb-2">{tempDesc}</p>}
+
+    <UnionSchemaEditor
+      schema={schema}
+      readOnly={readOnly}
+      onChange={handleSchemaUpdate}
+    />
+
+    <TypeEditor
+      schema={schema}
+      readOnly={readOnly}
+      validationNode={validationNode}
+      onChange={handleSchemaUpdate}
+      depth={depth + 1}
+    />
+  </div>
+)}
     </div>
   );
 };
