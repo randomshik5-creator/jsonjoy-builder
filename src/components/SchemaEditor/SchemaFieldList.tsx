@@ -9,6 +9,7 @@ import type {
 } from "../../types/jsonSchema.ts";
 import { buildValidationTree } from "../../types/validation.ts";
 import SchemaPropertyEditor from "./SchemaPropertyEditor.tsx";
+import UnionSchemaEditor from "./UnionSchemaEditor";
 
 interface SchemaFieldListProps {
   schema: JSONSchemaType;
