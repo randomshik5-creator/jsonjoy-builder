@@ -18,6 +18,7 @@ import { Badge } from "../ui/badge.tsx";
 import { ButtonToggle } from "../ui/button-toggle.tsx";
 import TypeDropdown from "./TypeDropdown.tsx";
 import TypeEditor from "./TypeEditor.tsx";
+import UnionSchemaEditor from "./UnionSchemaEditor";
 export interface SchemaPropertyEditorProps {
   name: string;
   schema: JSONSchema;
